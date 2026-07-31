@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 
 subtitle: ''
 description: ''
 keywords:
@@ -110,3 +110,19 @@ deploy:
   repo: https://github.com/EvisWang1998/eviswang1998.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
+  
+markdown:
+  preset: 'default'
+  html: true
+  xhtmlOut: false
+  breaks: true
+  linkify: true
+  typographer: true
+  plugins:
+    - markdown-it-mathjax3
+    
+mathjax:
+  tags: 'all' # 'ams'
+  single_dollars: true # 
+  cHTML:
+    scale: 1
